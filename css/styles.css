@@ -42,6 +42,37 @@ img {
   width: 100%;
 }
 
+a:active,
+a:focus {
+  outline: none;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+textarea {
+  resize: vertical;
+}
+textarea {
+  resize: horizontal;
+}
+
 /* img {
     display: block;
     max-width: 100%;
@@ -240,6 +271,11 @@ img {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -345,9 +381,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
   bottom: 0;
   height: 70px;
   width: 100%;
+
   background-color: rgba(47, 48, 58, 0.8);
 
   font-weight: 700;
