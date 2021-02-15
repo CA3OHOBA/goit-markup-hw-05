@@ -752,14 +752,12 @@ textarea {
   position: relative;
   overflow: hidden;
 }
-.portfolio-section-list li:hover .portfolio-text-modal {
-  top: 0;
-  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
-}
+.portfolio-section-list li:hover .portfolio-text-modal,
 .portfolio-section-link:focus .portfolio-text-modal {
   top: 0;
   transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-text-modal {
   position: absolute;
   top: 100%;
