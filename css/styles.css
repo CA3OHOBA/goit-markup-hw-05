@@ -130,6 +130,7 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* LOGO */
@@ -161,6 +162,7 @@ textarea {
   display: flex;
   align-items: center;
   fill: currentColor;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list-item:not(:last-child) {
@@ -201,12 +203,12 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover a:hover,
 .hover a:focus {
   color: var(--brand-color);
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-contact-icon {
@@ -214,6 +216,7 @@ textarea {
   display: inline-block;
   align-items: center;
   background-size: contain;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------- HERO -------------------*/
@@ -251,6 +254,7 @@ textarea {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -474,18 +478,17 @@ textarea {
   height: 44px;
   background-color: var(--white-color);
   border-radius: 50%;
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--brand-color);
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white-color);
-  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .social-list-icon:hover,
@@ -498,6 +501,7 @@ textarea {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item:not(:last-child) {
@@ -547,17 +551,15 @@ textarea {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: all;
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
-  /* transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);  */
-  /* transition: 2500ms border cubic-bezier(0.4, 0, 0.2, 1); */
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: all;
 }
 
 /*------------------- FOOTER -------------------*/
@@ -628,6 +630,7 @@ textarea {
   background-position: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inst {
@@ -646,7 +649,6 @@ textarea {
 .footer-soc-icons:hover,
 .footer-soc-icons:focus {
   background-color: var(--brand-color);
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------- PORTFOLIO -------------------*/
@@ -679,6 +681,9 @@ textarea {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -686,9 +691,6 @@ textarea {
   color: var(--white-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .filter-list button:hover{
@@ -706,12 +708,12 @@ textarea {
 
 .portfolio-section-link {
   display: inline-block;
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section-link:hover,
 .portfolio-section-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section-item {
@@ -755,7 +757,6 @@ textarea {
 .portfolio-section-item:hover .portfolio-text-modal,
 .portfolio-section-link:focus .portfolio-text-modal {
   top: 0;
-  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-modal {
@@ -770,4 +771,5 @@ textarea {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   color: #ffffff;
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
 }
