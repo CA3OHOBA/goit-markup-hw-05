@@ -138,6 +138,18 @@ img {
 
 .site-nav .link.current {
   color: var(--brand-color);
+  position: relative;
+}
+
+.site-nav .link.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: var(--brand-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
 }
 
 /* CONTACTS */
@@ -163,6 +175,7 @@ img {
 .hover a:hover,
 .hover a:focus {
   color: var(--brand-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .navigation-contact-icon {
@@ -211,6 +224,7 @@ img {
 
 .hero-button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /*------------------- SECTION FEATURES (WITH HIDDEN H2) -------------------*/
@@ -385,15 +399,18 @@ img {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--brand-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social-list-icon:hover,
 .social-list-icon:focus {
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
   fill: #ffffff;
 }
 
@@ -406,6 +423,7 @@ img {
 .social-list__item:hover .social-list-icon,/* a + svg*/
 .social-list__item:focus .social-list-icon {
   fill: var(--white-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social-list-item:not(:last-child) {
@@ -415,6 +433,7 @@ img {
 .social-list__item:hover, /* a*/
 .social-list__item:focus {
   background-color: var(--special-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /*------------------- SECTION OUR CLIENTS -------------------*/
@@ -460,6 +479,7 @@ img {
 .clients-icon:focus {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /*------------------- FOOTER -------------------*/
@@ -548,6 +568,7 @@ img {
 .footer-soc-icons:hover,
 .footer-soc-icons:focus {
   background-color: var(--brand-color);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /*------------------- PORTFOLIO -------------------*/
@@ -587,6 +608,7 @@ img {
   color: var(--white-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* .filter-list button:hover{
@@ -609,6 +631,7 @@ img {
 .portfolio-section-link:hover,
 .portfolio-section-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio-section-item {
@@ -668,5 +691,4 @@ img {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   color: #ffffff;
-  transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
 }
