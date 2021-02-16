@@ -416,9 +416,13 @@
             Комментарий
             <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <input type="checkbox" value="policy-accept" class="modal-form-policy-check" />
-          <label class="label-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> </label>
-          <button type="submit" class="modal-form-btn">Отправить</button>
+          <input id="policy" type="checkbox" value="policy-accept" class="modal-form-policy-check visually-hidden" />
+          <label class="modal-form-policy-label" for="policy"
+            ><p class="label-text">
+              Соглашаюсь с рассылкой и принимаю <a class="footer-contact-link" href="#">Условия договора</a>
+            </p>
+          </label>
+          <button type="submit" class="modal-form-btn"><span class="modal-btn-text">Отправить</span></button>
         </form>
       </div>
     </div>
