@@ -734,6 +734,8 @@ textarea {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer.container {
@@ -755,11 +757,6 @@ textarea {
   color: var(--fotter-link-color);
   font-style: normal;
   margin-top: 9px;
-}
-
-.footer-socials {
-  margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-title {
@@ -813,10 +810,6 @@ textarea {
   background-color: var(--brand-color);
 }
 
-.connect {
-  margin-top: 12px;
-  margin-left: 93px;
-}
 .footer-form {
   display: flex;
 }
@@ -844,7 +837,6 @@ textarea {
 
 .fotter-form-btn {
   display: flex;
-
   align-items: center;
 
   width: 200px;
@@ -864,6 +856,8 @@ textarea {
   background-repeat: no-repeat;
   background-position: bottom 13px right 28px;
   cursor: pointer;
+  padding-left: 29px;
+  padding-right: 62px;
 }
 
 /*------------------- PORTFOLIO -------------------*/
