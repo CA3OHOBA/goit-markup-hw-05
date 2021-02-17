@@ -229,7 +229,7 @@ textarea {
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-title {
@@ -405,6 +405,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  padding-left: 8px;
 }
 
 /* CHECKBOX */
